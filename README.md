@@ -1,15 +1,43 @@
-Welcome to your new dbt project!
+# 🚀 Sales Analytics Pipeline using dbt + SQL + Snowflake/PostgreSQL
 
-### Using the starter project
+*Transforming raw e-commerce sales data into analytics-ready reports using dbt and SQL.*
 
-Try running the following commands:
-- dbt run
-- dbt test
+## 📌 Project Overview
 
+A mini data warehouse implementation for e-commerce analytics:
+- Ingests raw CSV data (orders, customers, products)
+- Loads into Snowflake/PostgreSQL data warehouse
+- Transforms data using dbt into clean dimensional models
+- Generates actionable insights (monthly sales, customer segmentation, product performance)
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## 🛠️ Tools Used
+- **Data Warehouse**: Snowflake
+- **Transformation**: dbt (data build tool)
+- **Version Control**: GitHub
+- **CI/CD**: GitHub Actions 
+
+## 📂 Project Structure
+
+SALES_ANALYSIS_PROJECT/
+├── .vscode/
+├── analyses/
+├── dbt_packages/
+├── logs/
+├── macros/
+├── models/
+│   ├── staging/
+│   └── marts/
+│       └── sales_summary.sql
+├──snowflakesample/
+│       ├── schema.yml
+│   ├── stg_customers.sql
+│   ├── stg_orders.sql
+│   └── stg_products.sql
+├── seeds/
+├── snapshots/
+│   └── .gitkeep
+├── target/
+├── tests/
+├── .gitignore
+├── dbt_project.yml
+└── README.md
