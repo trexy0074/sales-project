@@ -1,4 +1,4 @@
-# 🚀 Sales Analytics Pipeline using dbt + SQL + Snowflake/PostgreSQL
+# 🚀 Sales Analytics Pipeline using dbt + SQL + Snowflake
 
 *Transforming raw e-commerce sales data into analytics-ready reports using dbt and SQL.*
 
